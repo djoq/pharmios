@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C1D068611B9F6E4F009EBEF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D068601B9F6E4F009EBEF7 /* main.m */; };
+		C1D068641B9F6E4F009EBEF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D068631B9F6E4F009EBEF7 /* AppDelegate.m */; };
+		C1D068671B9F6E4F009EBEF7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D068661B9F6E4F009EBEF7 /* ViewController.m */; };
+		C1D0686A1B9F6E4F009EBEF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1D068681B9F6E4F009EBEF7 /* Main.storyboard */; };
+		C1D0686D1B9F6E4F009EBEF7 /* PharmaSpace_RxChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1D0686B1B9F6E4F009EBEF7 /* PharmaSpace_RxChallenge.xcdatamodeld */; };
+		C1D0686F1B9F6E4F009EBEF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D0686E1B9F6E4F009EBEF7 /* Assets.xcassets */; };
+		C1D068721B9F6E4F009EBEF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1D068701B9F6E4F009EBEF7 /* LaunchScreen.storyboard */; };
+		C1D0687D1B9F6E4F009EBEF7 /* PharmaSpace_RxChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D0687C1B9F6E4F009EBEF7 /* PharmaSpace_RxChallengeTests.m */; };
+		C1D068881B9F6E4F009EBEF7 /* PharmaSpace_RxChallengeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D068871B9F6E4F009EBEF7 /* PharmaSpace_RxChallengeUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1D068791B9F6E4F009EBEF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1D068541B9F6E4F009EBEF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1D0685B1B9F6E4F009EBEF7;
+			remoteInfo = "PharmaSpace RxChallenge";
+		};
+		C1D068841B9F6E4F009EBEF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1D068541B9F6E4F009EBEF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1D0685B1B9F6E4F009EBEF7;
+			remoteInfo = "PharmaSpace RxChallenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C1D0685C1B9F6E4F009EBEF7 /* PharmaSpace RxChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PharmaSpace RxChallenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D068601B9F6E4F009EBEF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C1D068621B9F6E4F009EBEF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C1D068631B9F6E4F009EBEF7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C1D068651B9F6E4F009EBEF7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C1D068661B9F6E4F009EBEF7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C1D068691B9F6E4F009EBEF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1D0686C1B9F6E4F009EBEF7 /* PharmaSpace_RxChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PharmaSpace_RxChallenge.xcdatamodel; sourceTree = "<group>"; };
+		C1D0686E1B9F6E4F009EBEF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1D068711B9F6E4F009EBEF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1D068731B9F6E4F009EBEF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1D068781B9F6E4F009EBEF7 /* PharmaSpace RxChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PharmaSpace RxChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D0687C1B9F6E4F009EBEF7 /* PharmaSpace_RxChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PharmaSpace_RxChallengeTests.m; sourceTree = "<group>"; };
+		C1D0687E1B9F6E4F009EBEF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1D068831B9F6E4F009EBEF7 /* PharmaSpace RxChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PharmaSpace RxChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D068871B9F6E4F009EBEF7 /* PharmaSpace_RxChallengeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PharmaSpace_RxChallengeUITests.m; sourceTree = "<group>"; };
+		C1D068891B9F6E4F009EBEF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1D068591B9F6E4F009EBEF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1D068751B9F6E4F009EBEF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1D068801B9F6E4F009EBEF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C1D068531B9F6E4F009EBEF7 = {
+			isa = PBXGroup;
+			children = (
+				C1D0685E1B9F6E4F009EBEF7 /* PharmaSpace RxChallenge */,
+				C1D0687B1B9F6E4F009EBEF7 /* PharmaSpace RxChallengeTests */,
+				C1D068861B9F6E4F009EBEF7 /* PharmaSpace RxChallengeUITests */,
+				C1D0685D1B9F6E4F009EBEF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C1D0685D1B9F6E4F009EBEF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1D0685C1B9F6E4F009EBEF7 /* PharmaSpace RxChallenge.app */,
+				C1D068781B9F6E4F009EBEF7 /* PharmaSpace RxChallengeTests.xctest */,
+				C1D068831B9F6E4F009EBEF7 /* PharmaSpace RxChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1D0685E1B9F6E4F009EBEF7 /* PharmaSpace RxChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				C1D068621B9F6E4F009EBEF7 /* AppDelegate.h */,
+				C1D068631B9F6E4F009EBEF7 /* AppDelegate.m */,
+				C1D068651B9F6E4F009EBEF7 /* ViewController.h */,
+				C1D068661B9F6E4F009EBEF7 /* ViewController.m */,
+				C1D068681B9F6E4F009EBEF7 /* Main.storyboard */,
+				C1D0686E1B9F6E4F009EBEF7 /* Assets.xcassets */,
+				C1D068701B9F6E4F009EBEF7 /* LaunchScreen.storyboard */,
+				C1D068731B9F6E4F009EBEF7 /* Info.plist */,
+				C1D0686B1B9F6E4F009EBEF7 /* PharmaSpace_RxChallenge.xcdatamodeld */,
+				C1D0685F1B9F6E4F009EBEF7 /* Supporting Files */,
+			);
+			path = "PharmaSpace RxChallenge";
+			sourceTree = "<group>";
+		};
+		C1D0685F1B9F6E4F009EBEF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1D068601B9F6E4F009EBEF7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1D0687B1B9F6E4F009EBEF7 /* PharmaSpace RxChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1D0687C1B9F6E4F009EBEF7 /* PharmaSpace_RxChallengeTests.m */,
+				C1D0687E1B9F6E4F009EBEF7 /* Info.plist */,
+			);
+			path = "PharmaSpace RxChallengeTests";
+			sourceTree = "<group>";
+		};
+		C1D068861B9F6E4F009EBEF7 /* PharmaSpace RxChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C1D068871B9F6E4F009EBEF7 /* PharmaSpace_RxChallengeUITests.m */,
+				C1D068891B9F6E4F009EBEF7 /* Info.plist */,
+			);
+			path = "PharmaSpace RxChallengeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1D0685B1B9F6E4F009EBEF7 /* PharmaSpace RxChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1D0688C1B9F6E4F009EBEF7 /* Build configuration list for PBXNativeTarget "PharmaSpace RxChallenge" */;
+			buildPhases = (
+				C1D068581B9F6E4F009EBEF7 /* Sources */,
+				C1D068591B9F6E4F009EBEF7 /* Frameworks */,
+				C1D0685A1B9F6E4F009EBEF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PharmaSpace RxChallenge";
+			productName = "PharmaSpace RxChallenge";
+			productReference = C1D0685C1B9F6E4F009EBEF7 /* PharmaSpace RxChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C1D068771B9F6E4F009EBEF7 /* PharmaSpace RxChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1D0688F1B9F6E4F009EBEF7 /* Build configuration list for PBXNativeTarget "PharmaSpace RxChallengeTests" */;
+			buildPhases = (
+				C1D068741B9F6E4F009EBEF7 /* Sources */,
+				C1D068751B9F6E4F009EBEF7 /* Frameworks */,
+				C1D068761B9F6E4F009EBEF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1D0687A1B9F6E4F009EBEF7 /* PBXTargetDependency */,
+			);
+			name = "PharmaSpace RxChallengeTests";
+			productName = "PharmaSpace RxChallengeTests";
+			productReference = C1D068781B9F6E4F009EBEF7 /* PharmaSpace RxChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C1D068821B9F6E4F009EBEF7 /* PharmaSpace RxChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1D068921B9F6E4F009EBEF7 /* Build configuration list for PBXNativeTarget "PharmaSpace RxChallengeUITests" */;
+			buildPhases = (
+				C1D0687F1B9F6E4F009EBEF7 /* Sources */,
+				C1D068801B9F6E4F009EBEF7 /* Frameworks */,
+				C1D068811B9F6E4F009EBEF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1D068851B9F6E4F009EBEF7 /* PBXTargetDependency */,
+			);
+			name = "PharmaSpace RxChallengeUITests";
+			productName = "PharmaSpace RxChallengeUITests";
+			productReference = C1D068831B9F6E4F009EBEF7 /* PharmaSpace RxChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1D068541B9F6E4F009EBEF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Daniel Oquinn";
+				TargetAttributes = {
+					C1D0685B1B9F6E4F009EBEF7 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = HC8B8G93RZ;
+					};
+					C1D068771B9F6E4F009EBEF7 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = HC8B8G93RZ;
+						TestTargetID = C1D0685B1B9F6E4F009EBEF7;
+					};
+					C1D068821B9F6E4F009EBEF7 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = HC8B8G93RZ;
+						TestTargetID = C1D0685B1B9F6E4F009EBEF7;
+					};
+				};
+			};
+			buildConfigurationList = C1D068571B9F6E4F009EBEF7 /* Build configuration list for PBXProject "PharmaSpace RxChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1D068531B9F6E4F009EBEF7;
+			productRefGroup = C1D0685D1B9F6E4F009EBEF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1D0685B1B9F6E4F009EBEF7 /* PharmaSpace RxChallenge */,
+				C1D068771B9F6E4F009EBEF7 /* PharmaSpace RxChallengeTests */,
+				C1D068821B9F6E4F009EBEF7 /* PharmaSpace RxChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1D0685A1B9F6E4F009EBEF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1D068721B9F6E4F009EBEF7 /* LaunchScreen.storyboard in Resources */,
+				C1D0686F1B9F6E4F009EBEF7 /* Assets.xcassets in Resources */,
+				C1D0686A1B9F6E4F009EBEF7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1D068761B9F6E4F009EBEF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1D068811B9F6E4F009EBEF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1D068581B9F6E4F009EBEF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1D068671B9F6E4F009EBEF7 /* ViewController.m in Sources */,
+				C1D0686D1B9F6E4F009EBEF7 /* PharmaSpace_RxChallenge.xcdatamodeld in Sources */,
+				C1D068641B9F6E4F009EBEF7 /* AppDelegate.m in Sources */,
+				C1D068611B9F6E4F009EBEF7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1D068741B9F6E4F009EBEF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1D0687D1B9F6E4F009EBEF7 /* PharmaSpace_RxChallengeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1D0687F1B9F6E4F009EBEF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1D068881B9F6E4F009EBEF7 /* PharmaSpace_RxChallengeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1D0687A1B9F6E4F009EBEF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1D0685B1B9F6E4F009EBEF7 /* PharmaSpace RxChallenge */;
+			targetProxy = C1D068791B9F6E4F009EBEF7 /* PBXContainerItemProxy */;
+		};
+		C1D068851B9F6E4F009EBEF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1D0685B1B9F6E4F009EBEF7 /* PharmaSpace RxChallenge */;
+			targetProxy = C1D068841B9F6E4F009EBEF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C1D068681B9F6E4F009EBEF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1D068691B9F6E4F009EBEF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1D068701B9F6E4F009EBEF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1D068711B9F6E4F009EBEF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1D0688A1B9F6E4F009EBEF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1D0688B1B9F6E4F009EBEF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1D0688D1B9F6E4F009EBEF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "PharmaSpace RxChallenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Solutions-By-OQuinn.PharmaSpace-RxChallenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C1D0688E1B9F6E4F009EBEF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "PharmaSpace RxChallenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Solutions-By-OQuinn.PharmaSpace-RxChallenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C1D068901B9F6E4F009EBEF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "PharmaSpace RxChallengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Solutions-By-OQuinn.PharmaSpace-RxChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PharmaSpace RxChallenge.app/PharmaSpace RxChallenge";
+			};
+			name = Debug;
+		};
+		C1D068911B9F6E4F009EBEF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "PharmaSpace RxChallengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Solutions-By-OQuinn.PharmaSpace-RxChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PharmaSpace RxChallenge.app/PharmaSpace RxChallenge";
+			};
+			name = Release;
+		};
+		C1D068931B9F6E4F009EBEF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PharmaSpace RxChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Solutions-By-OQuinn.PharmaSpace-RxChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "PharmaSpace RxChallenge";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C1D068941B9F6E4F009EBEF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PharmaSpace RxChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Solutions-By-OQuinn.PharmaSpace-RxChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "PharmaSpace RxChallenge";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1D068571B9F6E4F009EBEF7 /* Build configuration list for PBXProject "PharmaSpace RxChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1D0688A1B9F6E4F009EBEF7 /* Debug */,
+				C1D0688B1B9F6E4F009EBEF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1D0688C1B9F6E4F009EBEF7 /* Build configuration list for PBXNativeTarget "PharmaSpace RxChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1D0688D1B9F6E4F009EBEF7 /* Debug */,
+				C1D0688E1B9F6E4F009EBEF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C1D0688F1B9F6E4F009EBEF7 /* Build configuration list for PBXNativeTarget "PharmaSpace RxChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1D068901B9F6E4F009EBEF7 /* Debug */,
+				C1D068911B9F6E4F009EBEF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C1D068921B9F6E4F009EBEF7 /* Build configuration list for PBXNativeTarget "PharmaSpace RxChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1D068931B9F6E4F009EBEF7 /* Debug */,
+				C1D068941B9F6E4F009EBEF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C1D0686B1B9F6E4F009EBEF7 /* PharmaSpace_RxChallenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C1D0686C1B9F6E4F009EBEF7 /* PharmaSpace_RxChallenge.xcdatamodel */,
+			);
+			currentVersion = C1D0686C1B9F6E4F009EBEF7 /* PharmaSpace_RxChallenge.xcdatamodel */;
+			path = PharmaSpace_RxChallenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C1D068541B9F6E4F009EBEF7 /* Project object */;
+}
