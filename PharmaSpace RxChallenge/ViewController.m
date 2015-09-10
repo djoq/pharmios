@@ -15,6 +15,12 @@
 
 @interface ViewController ()
 
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *Back;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *Forward;
+
+
+
 @end
 
 @implementation ViewController
@@ -38,6 +44,16 @@
 }
 
 
+- (void)loadRequestFromString:(NSString*)urlString
+{
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
+    [self.webView loadRequest:urlRequest];
+}
+
+- (void)viewDidLayoutSubviews {
+    _webView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+}
 
 
 
