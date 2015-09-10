@@ -6,7 +6,10 @@
 //  Copyright © 2015 Daniel Oquinn. All rights reserved.
 //
 
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import "AppDelegate.h"
+
 
 @interface AppDelegate ()
 
@@ -124,4 +127,51 @@
     }
 }
 
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    return [[FBSDKApplicationDelegate sharedInstance] application:application
+                                                          openURL:url
+                                                sourceApplication:sourceApplication
+                                                       annotation:annotation];
+}
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    NSString *url = [[request URL] absoluteString];
+    
+    //when user status == connected (has a access_token at facebook oauth response)
+    if([url hasPrefix:@"https://m.facebook.com/dialog/oauth"] && [url rangeOfString:@"access_token="].location != NSNotFound)
+    {
+
+        return NO;
+    }
+    
+    return YES;
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    
+    NSString *url = [[webView.request URL] absoluteString];
+    
+    if([url hasPrefix:@"https://m.facebook.com/dialog/oauth"])
+    {
+        NSString *bodyHTML = [webView stringByEvaluatingJavaScriptFromString:@"document.body.innerHTML"];
+        
+        //Facebook oauth response dead end: is a blank body and a head with a script that does
+        //nothing. But if you got back to your last page, the handler of authResponseChange
+        //will catch a connected status if user did his login and auth app
+        if([bodyHTML isEqualToString:@""])
+        {
+
+        }
+    }
+    
+}
+
+
+
 @end
+
+

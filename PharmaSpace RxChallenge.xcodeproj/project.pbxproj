@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C163E87C1B9F96E400AF5C11 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C163E87B1B9F96E400AF5C11 /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
+		C163E87E1B9F96EE00AF5C11 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C163E87D1B9F96EE00AF5C11 /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
+		C163E8801B9F970E00AF5C11 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C163E87F1B9F970E00AF5C11 /* FBSDKShareKit.framework */; settings = {ASSET_TAGS = (); }; };
 		C1D068611B9F6E4F009EBEF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D068601B9F6E4F009EBEF7 /* main.m */; };
 		C1D068641B9F6E4F009EBEF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D068631B9F6E4F009EBEF7 /* AppDelegate.m */; };
 		C1D068671B9F6E4F009EBEF7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D068661B9F6E4F009EBEF7 /* ViewController.m */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C163E87B1B9F96E400AF5C11 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		C163E87D1B9F96EE00AF5C11 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		C163E87F1B9F970E00AF5C11 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		C1D0685C1B9F6E4F009EBEF7 /* PharmaSpace RxChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PharmaSpace RxChallenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1D068601B9F6E4F009EBEF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C1D068621B9F6E4F009EBEF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,6 +66,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C163E87E1B9F96EE00AF5C11 /* FBSDKLoginKit.framework in Frameworks */,
+				C163E87C1B9F96E400AF5C11 /* FBSDKCoreKit.framework in Frameworks */,
+				C163E8801B9F970E00AF5C11 /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +112,7 @@
 		C1D0685E1B9F6E4F009EBEF7 /* PharmaSpace RxChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				C1D068951B9F6F21009EBEF7 /* Frameworks */,
 				C1D068621B9F6E4F009EBEF7 /* AppDelegate.h */,
 				C1D068631B9F6E4F009EBEF7 /* AppDelegate.m */,
 				C1D068651B9F6E4F009EBEF7 /* ViewController.h */,
@@ -141,6 +151,17 @@
 				C1D068891B9F6E4F009EBEF7 /* Info.plist */,
 			);
 			path = "PharmaSpace RxChallengeUITests";
+			sourceTree = "<group>";
+		};
+		C1D068951B9F6F21009EBEF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C163E87F1B9F970E00AF5C11 /* FBSDKShareKit.framework */,
+				C163E87D1B9F96EE00AF5C11 /* FBSDKLoginKit.framework */,
+				C163E87B1B9F96E400AF5C11 /* FBSDKCoreKit.framework */,
+			);
+			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,6 +394,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -410,6 +432,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -420,10 +443,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_ON_DEMAND_RESOURCES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "PharmaSpace RxChallenge/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Solutions-By-OQuinn.PharmaSpace-RxChallenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 			};
 			name = Debug;
 		};
@@ -431,10 +460,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_ON_DEMAND_RESOURCES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "PharmaSpace RxChallenge/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Solutions-By-OQuinn.PharmaSpace-RxChallenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 			};
 			name = Release;
 		};
@@ -505,6 +540,7 @@
 				C1D0688E1B9F6E4F009EBEF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1D0688F1B9F6E4F009EBEF7 /* Build configuration list for PBXNativeTarget "PharmaSpace RxChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +549,7 @@
 				C1D068911B9F6E4F009EBEF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1D068921B9F6E4F009EBEF7 /* Build configuration list for PBXNativeTarget "PharmaSpace RxChallengeUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +558,7 @@
 				C1D068941B9F6E4F009EBEF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
